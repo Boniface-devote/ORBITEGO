@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ORBITEGO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ORBITEGO</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="library.html" class="nav-link">Library</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive digital solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Catalog -->
+    <section class="services-catalog">
+        <div class="container">
+            <h2>Capabilities & Deployment Options</h2>
+
+            <!-- Service 1 -->
+            <div class="service-detail">
+                <div class="service-header">
+                    <h3>📊 Strategic Consulting & Planning</h3>
+                    <button class="toggle-btn" onclick="toggleService(0)">+</button>
+                </div>
+                <div class="service-content" id="service-0">
+                    <p>We develop comprehensive digital strategies aligned with your business objectives, market
+                        positioning, and growth targets.</p>
+                    <div class="capability-tiers">
+                        <div class="tier">
+                            <h4>📋 Tier 1: Strategy Foundation</h4>
+                            <ul>
+                                <li>Market analysis and competitive landscape</li>
+                                <li>Target audience profiling</li>
+                                <li>Digital roadmap development</li>
+                                <li>KPI definition and tracking</li>
+                            </ul>
+                        </div>
+                        <div class="tier">
+                            <h4>🎯 Tier 2: Advanced Strategy</h4>
+                            <ul>
+                                <li>Customer journey mapping</li>
+                                <li>Multi-channel marketing strategy</li>
+                                <li>Competitive positioning analysis</li>
+                                <li>Budget optimization planning</li>
+                            </ul>
+                        </div>
+                        <div class="tier">
+                            <h4>🚀 Tier 3: Enterprise Strategy</h4>
+                            <ul>
+                                <li>Digital transformation planning</li>
+                                <li>Organizational change management</li>
+                                <li>Innovation roadmap</li>
+                                <li>Executive strategy workshops</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail">
+                <div class="service-header">
+                    <h3>💻 Custom Development & Builds</h3>
+                    <button class="toggle-btn" onclick="toggleService(1)">+</button>
+                </div>
+                <div class="service-content" id="service-1">
+                    <p>From concept to deployment, we build custom digital solutions designed for performance,
+                        scalability, and user engagement.</p>
+                    <div class="capability-tiers">
+                        <div class="tier">
+                            <h4>🌐 Web Development</h4>
+                            <ul>
+                                <li>Responsive website design & development</li>
+                                <li>E-commerce platforms</li>
+                                <li>Progressive Web Apps (PWA)</li>
+                                <li>Performance optimization</li>
+                            </ul>
+                        </div>
+                        <div class="tier">
+                            <h4>📱 Mobile Solutions</h4>
+                            <ul>
+                                <li>Native iOS/Android applications</li>
+                                <li>Cross-platform development</li>
+                                <li>Mobile-first design</li>
+                                <li>App store optimization</li>
+                            </ul>
+                        </div>
+                        <div class="tier">
+                            <h4>⚙️ Enterprise Systems</h4>
+                            <ul>
+                                <li>Custom CMS platforms</li>
+                                <li>API development and integration</li>
+                                <li>Database architecture</li>
+                                <li>System scalability & maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Service 3 -->
+    <div class="service-detail">
+        <div class="service-header">
+            <h3>📱 Social Media & Community Management</h3>
+            <button class="toggle-btn" onclick="toggleService(2)">+</button>
+        </div>
+        <div class="service-content" id="service-2">
+            <p>Build and nurture engaged communities across all major social platforms with strategic content and
+                authentic engagement.</p>
+            <div class="capability-tiers">
+                <div class="tier">
+                    <h4>📝 Content Strategy</h4>
+                    <ul>
+                        <li>Social media strategy development</li>
+                        <li>Content calendar creation</li>
+                        <li>Brand voice & messaging guidelines</li>
+                        <li>Content optimization for each platform</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>👥 Community Management</h4>
+                    <ul>
+                        <li>Daily social media posting</li>
+                        <li>Audience engagement & response</li>
+                        <li>Community moderation</li>
+                        <li>Influencer relationships</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>📊 Analytics & Growth</h4>
+                    <ul>
+                        <li>Social analytics & reporting</li>
+                        <li>Audience growth strategies</li>
+                        <li>A/B testing & optimization</li>
+                        <li>Competitive benchmarking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-detail">
+        <div class="service-header">
+            <h3>🎯 Paid Advertising & Campaign Management</h3>
+            <button class="toggle-btn" onclick="toggleService(3)">+</button>
+        </div>
+        <div class="service-content" id="service-3">
+            <p>Maximize ROI through expertly managed paid advertising campaigns across Google, Meta, LinkedIn, and other
+                platforms.</p>
+            <div class="capability-tiers">
+                <div class="tier">
+                    <h4>🔍 Search Advertising</h4>
+                    <ul>
+                        <li>Google Ads management</li>
+                        <li>Keyword research & optimization</li>
+                        <li>Ad copy testing</li>
+                        <li>Landing page optimization</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>📸 Social Advertising</h4>
+                    <ul>
+                        <li>Facebook & Instagram ad campaigns</li>
+                        <li>LinkedIn B2B targeting</li>
+                        <li>TikTok & emerging platform ads</li>
+                        <li>Audience segmentation & retargeting</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>📊 Performance Marketing</h4>
+                    <ul>
+                        <li>ROI tracking & optimization</li>
+                        <li>Budget allocation strategy</li>
+                        <li>Conversion rate optimization</li>
+                        <li>Attribution modeling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="service-detail">
+        <div class="service-header">
+            <h3>🔎 SEO & Organic Growth</h3>
+            <button class="toggle-btn" onclick="toggleService(4)">+</button>
+        </div>
+        <div class="service-content" id="service-4">
+            <p>Build long-term visibility and organic traffic through comprehensive SEO strategies and content
+                optimization.</p>
+            <div class="capability-tiers">
+                <div class="tier">
+                    <h4>🔧 Technical SEO</h4>
+                    <ul>
+                        <li>Website audit & optimization</li>
+                        <li>Site speed & performance</li>
+                        <li>Mobile optimization</li>
+                        <li>XML sitemaps & robots.txt</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>📄 On-Page & Content SEO</h4>
+                    <ul>
+                        <li>Keyword research & mapping</li>
+                        <li>Meta tag optimization</li>
+                        <li>Content creation & optimization</li>
+                        <li>Internal linking strategy</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>🔗 Link Building & Authority</h4>
+                    <ul>
+                        <li>Backlink analysis</li>
+                        <li>Link acquisition campaigns</li>
+                        <li>Brand mention building</li>
+                        <li>Local SEO optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="service-detail">
+        <div class="service-header">
+            <h3>📊 Analytics & Performance Optimization</h3>
+            <button class="toggle-btn" onclick="toggleService(5)">+</button>
+        </div>
+        <div class="service-content" id="service-5">
+            <p>Transform data into actionable insights with comprehensive analytics, reporting, and continuous
+                optimization strategies.</p>
+            <div class="capability-tiers">
+                <div class="tier">
+                    <h4>📈 Analytics Setup & Tracking</h4>
+                    <ul>
+                        <li>Google Analytics 4 implementation</li>
+                        <li>Conversion tracking setup</li>
+                        <li>Event tracking configuration</li>
+                        <li>Data integration & pipeline</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>📊 Reporting & Insights</h4>
+                    <ul>
+                        <li>Custom dashboard creation</li>
+                        <li>Monthly performance reports</li>
+                        <li>Trend analysis & forecasting</li>
+                        <li>Competitive benchmarking</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>🎯 Optimization & Testing</h4>
+                    <ul>
+                        <li>A/B testing framework</li>
+                        <li>Multivariate testing</li>
+                        <li>UX optimization</li>
+                        <li>Conversion rate optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Explore Which Services Are Right for You</h2>
+            <p>Contact us for a personalized consultation and tailored proposal</p>
+            <a href="contact.html" class="btn btn-large">Request a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ORBITEGO</h4>
+                <p>Your trusted partner in digital transformation and growth.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: hello@orbitego.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ORBITEGO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
