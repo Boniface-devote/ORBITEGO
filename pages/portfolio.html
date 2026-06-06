@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ORBITEGO Portfolio - Case studies and work examples from our successful brand transformations and digital campaigns.">
+  <title>Portfolio | ORBITEGO</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="../index.html" class="logo">ORBITEGO</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="margin-top: 80px; min-height: auto; padding: 4rem 2rem;">
+    <div class="hero-content">
+      <h1>Our Work</h1>
+      <p>Explore our portfolio of successful brand transformations, digital campaigns, and market-dominating strategies across East Africa.</p>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section style="background-color: #1a2332; border-top: 1px solid #2a3647; border-bottom: 1px solid #2a3647; padding: 3rem 2rem;">
+    <div class="container">
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <button style="padding: 8px 16px; background-color: #00d4ff; color: #0f1419; border: none; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onclick="filterPortfolio('all')">All Projects</button>
+        <button style="padding: 8px 16px; background-color: transparent; color: #00d4ff; border: 2px solid #00d4ff; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onclick="filterPortfolio('branding')">Branding</button>
+        <button style="padding: 8px 16px; background-color: transparent; color: #00d4ff; border: 2px solid #00d4ff; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onclick="filterPortfolio('social')">Social Media</button>
+        <button style="padding: 8px 16px; background-color: transparent; color: #00d4ff; border: 2px solid #00d4ff; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onclick="filterPortfolio('marketing')">Marketing</button>
+        <button style="padding: 8px 16px; background-color: transparent; color: #00d4ff; border: 2px solid #00d4ff; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onclick="filterPortfolio('video')">Video Production</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section>
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Branding Project 1 -->
+        <div class="portfolio-item" data-category="branding" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            🏢
+          </div>
+          <div class="portfolio-content">
+            <h3>Tier-1 Real Estate Brand Transformation</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Brand Architecture | Corporate Identity</p>
+            <p>Complete brand repositioning for a leading property developer, including logo redesign, corporate guidelines, and market authority strategy.</p>
+          </div>
+        </div>
+
+        <!-- Branding Project 2 -->
+        <div class="portfolio-item" data-category="branding" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            🏛️
+          </div>
+          <div class="portfolio-content">
+            <h3>Financial Enterprise Corporate Rebrand</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Brand Strategy | Visual Systems</p>
+            <p>Strategic brand repositioning for a major financial institution, establishing market leadership through premium visual architecture.</p>
+          </div>
+        </div>
+
+        <!-- Social Media Project 1 -->
+        <div class="portfolio-item" data-category="social" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            📱
+          </div>
+          <div class="portfolio-content">
+            <h3>Luxury Hospitality Social Growth</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Social Media Management | Content Strategy</p>
+            <p>12-month social media transformation driving 250% engagement growth and establishing lifestyle brand authority on Instagram and TikTok.</p>
+          </div>
+        </div>
+
+        <!-- Social Media Project 2 -->
+        <div class="portfolio-item" data-category="social" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            📲
+          </div>
+          <div class="portfolio-content">
+            <h3>Tech Startup Social Authority Campaign</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Organic Growth | Community Building</p>
+            <p>From 5K to 150K followers in 8 months through strategic content architecture and community engagement optimization.</p>
+          </div>
+        </div>
+
+        <!-- Marketing Project 1 -->
+        <div class="portfolio-item" data-category="marketing" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            🎯
+          </div>
+          <div class="portfolio-content">
+            <h3>High-Yield Lead Generation Campaign</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Performance Marketing | B2B Lead Gen</p>
+            <p>Generated 2,500+ qualified leads in 6 months with 3.8x ROAS through strategic performance marketing and sales funnel optimization.</p>
+          </div>
+        </div>
+
+        <!-- Marketing Project 2 -->
+        <div class="portfolio-item" data-category="marketing" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            📊
+          </div>
+          <div class="portfolio-content">
+            <h3>Ecommerce Growth Acceleration</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Conversion Optimization | Paid Ads</p>
+            <p>Increased online sales by 400% through strategic paid advertising, landing page optimization, and customer journey refinement.</p>
+          </div>
+        </div>
+
+        <!-- Video Production Project 1 -->
+        <div class="portfolio-item" data-category="video" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            🎬
+          </div>
+          <div class="portfolio-content">
+            <h3>Luxury Property Drone Cinema</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Aerial Production | Real Estate Marketing</p>
+            <p>Cinema-grade drone footage and architectural walkthroughs that resulted in 45% faster property sales and premium valuation.</p>
+          </div>
+        </div>
+
+        <!-- Video Production Project 2 -->
+        <div class="portfolio-item" data-category="video" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            🎥
+          </div>
+          <div class="portfolio-content">
+            <h3>Corporate Documentary & Brand Story</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Video Production | Storytelling</p>
+            <p>Produced premium 12-minute corporate documentary achieving 2M+ views and establishing brand authority in institutional market.</p>
+          </div>
+        </div>
+
+        <!-- Additional Portfolio Item -->
+        <div class="portfolio-item" data-category="branding" style="cursor: pointer;">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+            ✨
+          </div>
+          <div class="portfolio-content">
+            <h3>Integrated Brand & Marketing Campaign</h3>
+            <p style="font-size: 0.85rem; color: #00d4ff; margin-bottom: 0.5rem;">Full-Service Marketing | Multi-Channel</p>
+            <p>Complete brand overhaul paired with coordinated marketing campaign across 5 channels, generating 320% ROI in first year.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies CTA -->
+  <section style="background-color: #1a2332; border-top: 1px solid #2a3647; text-align: center; padding: 4rem 2rem;">
+    <div class="container">
+      <h2 style="margin-bottom: 1rem;">Want To See More Success Stories?</h2>
+      <p style="margin-bottom: 2rem;">Each of our projects represents strategic excellence, creative mastery, and measurable business impact.</p>
+      <a href="contact.html" class="btn btn-primary">Request Case Study Details</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>ORBITEGO</h4>
+        <p style="color: #a8b4c4;">Strategic Branding, Digital Cultivation & Marketing Architecture for East Africa's most ambitious brands.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Brand Architecture</a></li>
+          <li><a href="services.html">Social Media Management</a></li>
+          <li><a href="services.html">Performance Marketing</a></li>
+          <li><a href="services.html">Media Production</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Liberty Road, Sonde, Kampala, Uganda</p>
+        <p><strong>Phone:</strong> <a href="tel:+256706811906">+256 706 811 906</a></p>
+        <p><strong>Email:</strong> <a href="mailto:orbitegoeastafrica@gmail.com">orbitegoeastafrica@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 ORBITEGO. All rights reserved. | Strategic Branding & Digital Marketing Excellence</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    function filterPortfolio(category) {
+      const items = document.querySelectorAll('[data-category]');
+      const buttons = document.querySelectorAll('button');
+
+      // Update button styles
+      buttons.forEach(btn => {
+        btn.style.backgroundColor = 'transparent';
+        btn.style.color = '#00d4ff';
+        btn.style.borderColor = '#00d4ff';
+      });
+      event.target.style.backgroundColor = '#00d4ff';
+      event.target.style.color = '#0f1419';
+      event.target.style.borderColor = '#00d4ff';
+
+      // Filter items
+      items.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
