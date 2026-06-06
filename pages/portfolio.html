@@ -18,6 +18,11 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </li>
       </ul>
       <div class="hamburger">
         <span></span>
@@ -213,7 +218,7 @@
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/script.js"></script>
   <script>
     function filterPortfolio(category) {
       const items = document.querySelectorAll('[data-category]');
